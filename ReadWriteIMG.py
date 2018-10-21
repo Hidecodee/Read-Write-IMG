@@ -34,12 +34,12 @@ def Write(FileName, Text):
 Help = (
     "|Стеганография!\n|Основые функции: \n|Read - вывести содержание картинки в "
     "байтах(FileName)\n|Write - Записать текст в конец картинки(FileName, Text)"
-    "\n|Пример: Read/test.jpg\n|Пример: Write/test.exe/Text kotoriy ho4y spratat"
+    "\n|Пример: Read$test.jpg\n|Пример: Write$test.exe/Text kotoriy ho4y spratat"
     )
 print(Help)
 while True:
     Step = input(str("[?]Введите функцию и аргументы: "))
-    Step = Step.split("/")
+    Step = Step.split("$")
     if Step[0] == "Read":
         Read(Step[1])
     elif Step[0] == "Write":
